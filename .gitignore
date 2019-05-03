@@ -1,3 +1,7 @@
+# React Client Side
+node_modules
+
+# Flask Server Side
 .DS_Store
 .venv/
 .vscode/
