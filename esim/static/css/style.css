@@ -42,6 +42,8 @@
 }
 
 .btn-yellow {
+    display: inline-block;
+    line-height: 3.6vw;
     background: transparent;
     border: 0.1vh solid #ffff00;
     color: #ffff00;
@@ -146,7 +148,7 @@
 }
 
 #main-bg-overlay-top {
-    display: none;
+    /* display: none; */
 }
 
 #main-bg-overlay-rectangle {
@@ -178,7 +180,7 @@
     height: 90vh;
     transform: translateY(-48%);
     background: #fff;
-    /* display: none; */
+    display: none;
 }
 
 #header {
@@ -201,7 +203,7 @@
 }
 
 #top {
-    display: none;
+    /* display: none; */
 }
 
 #top-title-wrapper {
@@ -274,7 +276,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* display: none; */
+    display: none;
 }
 
 #contents-operator {
@@ -364,7 +366,7 @@
 
 #content-index,
 #content-search,
-/* #content-analyze, */
+#content-analyze,
 #content-summary {
     display: none;
 }

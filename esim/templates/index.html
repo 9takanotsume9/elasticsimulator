@@ -1,1 +1,236 @@
-Hello
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>ESIM</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+</head>
+<body>
+
+    <!-- ---------------
+        VIEW-HEADER
+    --------------- -->
+
+    <div id="header">
+        <h1 id="header-logo">ESIM</h1>
+        <nav id="header-nav"></nav>
+    </div>
+
+
+    <!-- ---------------
+        VIEW-BG
+    --------------- -->
+
+    <div id="main-bg">
+        <div id="main-bg-overlay-top">
+            <div id="main-bg-overlay-rectangle"></div>
+            <div id="main-bg-overlay-triangle"></div>
+        </div>
+        <div id="main-bg-overlay"></div>
+    </div>
+
+
+    <!-- ---------------
+        VIEW-TOP
+    --------------- -->
+    <div id="top">
+        <div id="top-title-wrapper">
+            <h2 id="top-title">Elastic Simulator</h2>
+            <p id="top-title-caption">Search and Analyze keyword on the web.<br>This is based on Python API of Elasticsearch.<br>Quickly prototype new settings and mappings.</p>
+            <div id="top-btn-wrapper">
+                <input type="text" name="port-num" placeholder="Enter Port Number" id="form-connect-port-num" class="btn-input btn-simple" required number minlength="1" maxlength="5">
+                <div id="form-connect-submit" class="btn-input btn-yellow">Connect</div>
+            </div>
+        </div>
+        <div id="top-img-wrapper">
+            <img id="top-img-small" src="static/images/db.png" alt="">
+            <img id="top-img-large" src="static/images/db.png" alt="">
+        </div>
+    </div>
+
+    <!-- ---------------
+        VIEW-CONTENTS
+    --------------- -->
+    <div id="contents">
+        <div id="contents-operator">
+            <!-- ---------------
+                CONTENT-TABS
+            --------------- -->
+            <ul id="tabs">
+                <li class="tab-item tab-item-current">Index</li>
+                <li class="tab-item">Search</li>
+                <li class="tab-item">Analyze</li>
+                <li class="tab-item">Summary</li>
+            </ul>
+
+            <div id="content-item-wrapper">
+
+                <!-- ---------------
+                    CONTENT-INDEX
+                --------------- -->
+                <div id="content-index">
+                    <div id="content-show-index" class="bg-item">
+                        <ul id="content-show-index-items">
+                            <li class="content-show-index-item">
+                                <p class="content-show-index-item-text">search_keyword_2232-92423-9</p>
+                                <div class="btn-action btn-delete"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-create-index">
+                        <form action="#" id="form-create-index">
+                            <div class="form-create-index-item input-area">
+                                <div class="form-create-index-item-header">Source</div>
+                                <input type="text" id="form-create-index-source" class="form-create-index-input" placeholder="Enter Source Index Name">
+                                <div class="btn-action btn-pulldown"></div>
+                            </div>
+                            <div class="form-create-index-item input-area">
+                                <div class="form-create-index-item-header">New</div>
+                                <input type="text" id="form-create-index-new" class="form-create-index-input" placeholder="Enter New Index Name">
+                            </div>
+                            <div class="form-create-index-item input-area">
+                                <div class="form-create-index-item-header">Initializer</div>
+                                <input type="text" id="form-create-index-init" class="form-create-index-input" placeholder="Enter Initializer json Name">
+                                <div class="btn-action btn-pulldown"></div>
+                            </div>
+                            <div class="form-create-index-item input-area">
+                                <input type="submit" id="form-create-index-submit" class="btn-purple" value="Create Index">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- ---------------
+                    CONTENT-SEARCH
+                --------------- -->
+                <div id="content-search">
+                    <div class="content-search-item bg-item">
+                        <div class="btn-action-top btn-delete"></div>
+                        <div class="content-search-item-index input-area">
+                            search_keyword_2232-92423-9
+                            <div class="btn-action btn-pulldown"></div>
+                        </div>
+                        <div class="content-search-item-query-wrapper">
+                            <div class="content-search-item-query input-area">
+                                query.json
+                                <div class="btn-action btn-pulldown"></div>
+                            </div>
+                            <input type="text" class="content-search-item-keyword input-area" placeholder="Enter Keyword">
+                            <div class="content-search-item-icon"></div>
+                        </div>
+                        <div class="content-search-item-result-wrapper">
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">1</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">2</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">3</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">4</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">5</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">6</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">7</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">8</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">9</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                            <div class="content-search-item-result-item">
+                                <div class="content-search-item-result-header">10</div>
+                                <div class="content-search-item-result-text">こんにちは</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-create"></div>
+                </div>
+
+                <!-- ---------------
+                    CONTENT-ANALYZE
+                --------------- -->
+                <div id="content-analyze">
+                    <div class="content-analyze-item bg-item">
+                        <div class="btn-action-top btn-delete"></div>
+                        <div class="content-analyze-item-index input-area">
+                            search_keyword_2232-92423-9
+                            <div class="btn-action btn-pulldown"></div>
+                        </div>
+                        <div class="content-analyze-item-query-wrapper">
+                            <div class="content-analyze-item-analyzer input-area">
+                                analyzer.json
+                                <div class="btn-action btn-pulldown"></div>
+                            </div>
+                            <input type="text" class="content-analyze-item-keyword input-area" placeholder="Enter Keyword">
+                            <div class="content-analyze-item-icon"></div>
+                        </div>
+                        <div class="content-analyze-item-result-wrapper">
+                            <div class="content-analyze-item-result-item">
+                                <div class="content-analyze-item-result-text">こんにちは</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-create"></div>
+                </div>
+
+                <!-- ---------------
+                    CONTENT-SUMMARY
+                --------------- -->
+                <div id="content-summary">
+
+                </div>
+
+            </div>
+        </div>
+        <!-- ---------------
+            CONTENT-EDITOR
+        --------------- -->
+        <div id="contents-editor">
+            <div id="editor-header">
+                <div id="editor-header-folder" class="editor-header-item"></div>
+                <div class="editor-header-file editor-header-item editor-current">query.json</div>
+            </div>
+            <div id="editor"></div>
+        </div>
+    </div>
+
+    <!-- ---------------
+        VIEW-FOOTER
+    --------------- -->
+    <div class="footer"></div>
+
+    <!-- ---------------
+        SCRIPTS
+    --------------- -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.4/ace.js"></script>
+    <script type="text/javascript" src="static/js/editor.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+
+</body>
+</html>
