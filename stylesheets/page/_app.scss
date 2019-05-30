@@ -1,10 +1,9 @@
 @charset "utf-8";
 
 * {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: $ff-base;
     box-sizing: border-box;
-    color: #333;
-    /* letter-spacing: 1px; */
+    color: $color-dark;
 }
 
 *::-webkit-scrollbar {
@@ -38,15 +37,15 @@
 .btn-simple {
     background: transparent;
     border: 0.1vh solid #fff;
-    color: #fff;
+    color: $color-light;
 }
 
 .btn-yellow {
     display: inline-block;
     line-height: 3.6vw;
     background: transparent;
-    border: 0.1vh solid #ffff00;
-    color: #ffff00;
+    border: 0.1vh solid $color-yellow;
+    color: $color-yellow;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -56,8 +55,8 @@
     height: 5vh;
     border-radius: 100vw;
     background: transparent;
-    border: 0.1vh solid #9D67F2;
-    color: #9D67F2;
+    border: 0.1vh solid $color-purple;
+    color: $color-purple;
     font-size: 1vw;
     text-align: center;
     transition: 0.2s;
@@ -65,13 +64,13 @@
 }
 
 .btn-purple:hover {
-    background: #9D67F2;
-    color: #fff;
+    background: $color-purple;
+    color: $color-light;
 }
 
 .btn-yellow:hover {
-    background: #ffff00;
-    color: #333;
+    background: $color-yellow;
+    color: $color-dark;
 }
 
 .input-area {
@@ -80,7 +79,7 @@
     height: 5vh;
     margin-bottom: 1vh;
     background: #fff;
-    border: 0.1vh solid #9D67F2;
+    border: 0.1vh solid $color-purple;
     border-radius: 100vw;
     display: flex;
     align-items: center;
@@ -107,8 +106,8 @@
 
 .btn-delete::before {
     content: "\f00d";
-    font-family: "Font Awesome 5 Free";
-    color: #FC4A4A;
+    font-family: $ff-awesome;
+    color: $color-red;
 }
 
 .btn-create {
@@ -128,15 +127,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #1CD377;
-    font-family: "Font Awesome 5 Free";
+    font-family: $ff-awesome;
     font-size: 1vw;
     font-weight: 900;
 }
 
 .btn-pulldown::before {
     content: "\f0d7";
-    font-family: "Font Awesome 5 Free";
-    color: #333;
+    font-family: $ff-awesome;
+    color: $color-dark;
 }
 
 #main-bg {
@@ -169,7 +168,7 @@
     border-style: solid;
     border-width: 0 0 10vw 100vw;
     border-color: transparent;
-    border-bottom-color: #fff;
+    border-bottom-color: $color-light;
 }
 
 #main-bg-overlay {
@@ -197,7 +196,7 @@
 }
 
 #header h1 {
-    color: #fff;
+    color: $color-light;
     font-size: 2vw;
     font-weight: 900;
 }
@@ -218,14 +217,14 @@
 }
 
 #top-title {
-    color: #fff;
+    color: $color-light;
     font-size: 3vw;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
 #top-title-caption {
-    color: #fff;
+    color: $color-light;
     font-size: 1.5vw;
     line-height: 3vw;
     margin-bottom: 36px;
@@ -335,7 +334,7 @@
 
 .tab-item-current {
     background: #fff;
-    color: #333;
+    color: $color-dark;
 }
 
 #content-item-wrapper {
@@ -406,7 +405,7 @@
 .content-show-index-item-text {
     width: 90%;
     font-size: 1vw;
-    color: #333;
+    color: $color-dark;
     white-space: nowrap;
     overflow: scroll;
 }
@@ -427,10 +426,10 @@
     width: 10vw;
     height: 5vh;
     margin-right: 2vw;
-    background: #9D67F2;
-    border: 0.1vh solid #9D67F2;
+    background: $color-purple;
+    border: 0.1vh solid $color-purple;
     border-radius: 100vw 0 0 100vw;
-    color: #fff;
+    color: $color-light;
     font-size: 1vw;
     line-height: 5vh;
     text-align: center;
@@ -447,7 +446,7 @@
     border: none;
     border-radius: 100vw;
     font-size: 1vw;
-    color: #333;
+    color: $color-dark;
 }
 
 .form-create-index-input::placeholder {
@@ -462,8 +461,8 @@
 }
 
 .ace_editor, .ace_editor * {
-    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Droid Sans Mono", "Consolas", monospace !important;
-    color: #333;
+    font-family: $ff-ace;
+    color: $color-dark;
 }
 
 #editor-header {
@@ -504,7 +503,7 @@
 }
 
 .editor-current {
-    color: #333;
+    color: $color-dark;
     background: #fff;
 }
 
@@ -532,7 +531,7 @@
     width: 80%;
     padding: 0 2vw;
     font-size: 1vw;
-    color: #333;
+    color: $color-dark;
     overflow: scroll;
 }
 
@@ -555,7 +554,7 @@
     margin-bottom: 0;
     padding: 0 2vw;
     font-size: 1vw;
-    color: #333;
+    color: $color-dark;
     overflow: scroll;
 }
 
@@ -565,7 +564,7 @@
     margin-bottom: 0;
     padding: 0 2vw;
     font-size: 1vw;
-    color: #333;
+    color: $color-dark;
     overflow: scroll;
 }
 
@@ -577,7 +576,7 @@
     transform: translate(0, -50%);
     width: 2vw;
     height: 2vw;
-    background: #9D67F2;
+    background: $color-purple;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -638,7 +637,7 @@
     width: 10%;
     height: 100%;
     font-size: 1vw;
-    color: #333;
+    color: $color-dark;
     border-right: 0.1vh solid #d5d5d5;
     display: flex;
     justify-content: center;
@@ -652,7 +651,7 @@
     /* line-height: 4vh; */
     padding: 0 1vw;
     font-size: 1vw;
-    color: #333;
+    color: $color-dark;
     white-space: nowrap;
     overflow: scroll;
     /* background: rgba(0,255,255,0.4); */

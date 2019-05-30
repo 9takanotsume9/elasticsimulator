@@ -1,5 +1,5 @@
 {
-  "name": "esim-react",
+  "name": "esim",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "webpack",
     "start": "webpack-dev-server"
   },
-  "author": "",
+  "author": "9takanotsume9@gmail.com",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -37,5 +37,6 @@
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1"
-  }
+  },
+  "repository": "https://github.com/9takanotsume9/elasticsimulator.git"
 }
